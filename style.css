@@ -237,7 +237,7 @@ span{
 }
 .service-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
@@ -248,10 +248,13 @@ span{
     align-items: center;
     text-align: center;
     justify-content: center;
-    flex: 1 1 40rem;
     background: var(--main-color);
     padding: 3rem 2rem 4rem;
-    height: 550px;
+    height: 350px;
+    width: 350px;
+    flex: 2 2 1rem;
+    /*
+    */
     border-radius: 2rem;
     border: 3px solid transparent;
     cursor: pointer;
@@ -284,4 +287,14 @@ span{
 
 .services-box .btn:hover{
     color: var(--main-color);
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+    width: 50px;
 }
