@@ -295,28 +295,35 @@ span{
 .services-box .btn:hover{
     color: var(--main-color);
 }
+
 ::-webkit-scrollbar{
     width: 15px;
 }
+
 ::-webkit-scrollbar-thumb{
     background-color: var(--main-color);
 }
+
 ::-webkit-scrollbar-track{
     background-color: var(--bg-color);
     width: 50px;
 }
+
 .projects{
     background: var(--bg-color);
 }
+
 .projects h2{
     margin-bottom: 8rem;
 }
+
 .project-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 2.5rem;
 }
+
 .project-container .project-box{
     position: relative;
     border-radius: 2rem;
@@ -324,18 +331,22 @@ span{
     overflow: hidden;
     display: flex;
 }
+
 .project-box img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 0.5s ease;
 }
+
 .project-box:hover img{
     transform: scale(1.1);
 }
+
 .project-box .project-info{
     position: absolute;
 }
+
 .project-box .project-info{
     position: absolute;
     bottom: 0;
@@ -356,17 +367,20 @@ span{
     background: radial-gradient(rgba(255,0,155,0.8), var(--main-color));
     transform: scale(1.1);
 }
+
 .project-info h4{
     font-size: 3rem;
     color: white;
     font-weight: bold;
 }
+
 .project-info p{
     font-size: 1.6rem;
     margin: 0.3rem 0 1rem;
     font-weight: 600;
     color: white;
 }
+
 .project-info a{
     color: white;
     display: inline-flex;
@@ -378,7 +392,101 @@ span{
     border: 2px solid var(--main-color);
     border-radius: 50%;
 }
+
 .project-info a i{
     font-size: 3rem;
     color: var(--main-color);
 }
+
+.skills{
+    background-color: var(--second-bg-color);
+}
+
+.skills h2{
+    margin-bottom: 2rem;
+}
+
+.skills{
+    margin: 0 auto;
+}
+
+.skill-bars{
+    margin-top: 8rem;
+    padding: 25px 30px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.skill-bars .bar{
+    margin: 20px 0;
+}
+
+.skill-bars .bar:first-child{
+    margin-top: 0px;
+}
+
+.skill-bars .bar .info{
+    margin-bottom: 5px;
+}
+
+.skill-bars .bar .info span{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: white;
+    position: relative;
+    border-radius: 10px;
+}
+
+.bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+}
+
+.bar .progress-line.html span{
+    width: 90%;
+    background-color: rgb(72, 150, 252);
+}
+
+.bar .progress-line.css span{
+    width: 90%;
+    background-color: rgb(214, 53, 53);
+}
+
+.bar .progress-line.javascript span{
+    width: 80%;
+    background-color: rgb(255, 174, 0);
+}
+
+.bar .progress-line.react span{
+    width: 50%;
+    background-color: rgb(58, 58, 255);
+}
+
+.bar .progress-line.next span{
+    width: 55%;
+    background-color: rgb(209, 58, 255);
+}
+
+.bar .progress-line.laravel span{
+    width: 80%;
+    background-color: orangered;
+}
+
+.bar .progress-line.mysql span{
+    width: 70%;
+    background-color: rgb(30, 255, 10);
+}
+
