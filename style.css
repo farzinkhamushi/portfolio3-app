@@ -233,9 +233,11 @@ span{
 .services{
     background-color: var(--second-bg-color);
 }
+
 .services h2{
     margin-bottom: 8rem;
 }
+
 .service-container{
     display: flex;
     justify-content: space-evenly;
@@ -302,4 +304,60 @@ span{
 ::-webkit-scrollbar-track{
     background-color: var(--bg-color);
     width: 50px;
+}
+.projects{
+    background: var(--bg-color);
+}
+.projects h2{
+    margin-bottom: 8rem;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.project-container .project-box{
+    position: relative;
+    border-radius: 2rem;
+    height: 550px;
+    overflow: hidden;
+    display: flex;
+}
+.project-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+.project-box:hover img{
+    transform: scale(1.1);
+}
+.project-box .project-info{
+    position: absolute;
+}
+.project-box .project-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.project-box .project-info:hover{
+    background: radial-gradient(rgba(255,0,155,0.8), var(--main-color));
+    transform: scale(1.1);
+}
+.project-info h4{
+    font-family: 3rem;
+    color: white;
+    font-weight: 800;
 }
