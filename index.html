@@ -14,7 +14,7 @@
             <span>Khamushi</span>
         </a>
 
-        <div id="menu-icon"><i class="bx bx-menu"></i></div>
+        <i id="menu-icon" class="bx bx-menu"></i>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -295,6 +295,38 @@
         </p>
     </footer>
 
+
+
+    <div class="scrollToTop-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z"></path></svg>
+    </div>
+
     <script src="script.js"></script>
+
+    <script>
+        
+        const scrolltotop_btn = document.querySelector(".scrollToTop-btn")
+        scrolltotop_btn.addEventListener("click", () => {
+            //document.documentElement.scrollTop = 0;
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+        window.addEventListener("scroll", function(){
+            const header = document.querySelector("header");
+            if (window.scrollY > 300 || document.documentElement.scrollTop > 300) {
+                scrolltotop_btn.style.display = "flex";
+                scrolltotop_btn.style.justifyContent = "center";
+                scrolltotop_btn.style.alignItems = "center";
+                scrolltotop_btn.style.alignContents = "baseline";
+            }
+            if (window.scrollY <= 0 || document.documentElement.scrollTop <= 300) {
+                scrolltotop_btn.style.display = "none";
+            }
+        });
+
+    </script>
 </body>
 </html>
