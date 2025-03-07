@@ -361,3 +361,12 @@ span{
     color: white;
     font-weight: 800;
 }
+.project-info p{
+    font-size: 1.6rem;
+    margin: 0.3rem 0 1rem;
+    font-weight: 600;
+    color: white;
+}
+.project-info a{
+    color: white;
+}
