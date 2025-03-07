@@ -369,4 +369,9 @@ span{
 }
 .project-info a{
     color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
 }
