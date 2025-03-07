@@ -357,9 +357,9 @@ span{
     transform: scale(1.1);
 }
 .project-info h4{
-    font-family: 3rem;
+    font-size: 3rem;
     color: white;
-    font-weight: 800;
+    font-weight: bold;
 }
 .project-info p{
     font-size: 1.6rem;
@@ -374,4 +374,11 @@ span{
     align-items: center;
     width: 5rem;
     height: 5rem;
+    background: white;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+}
+.project-info a i{
+    font-size: 3rem;
+    color: var(--main-color);
 }
